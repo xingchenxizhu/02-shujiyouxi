@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://k6r0xbjx1n8i"]
+
+[ext_resource type="Script" uid="uid://gwedxxhl7qax" path="res://scene-场景/pickup.gd" id="1_60y8k"]
+[ext_resource type="Shader" uid="uid://cyjgmqfy52ihf" path="res://scene-场景/bilnk.gdshader" id="1_q7iw3"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dfwuh"]
+resource_local_to_scene = true
+shader = ExtResource("1_q7iw3")
+shader_parameter/blink_enabled = false
+shader_parameter/blink_speed = 6.0000002375
+shader_parameter/hidden_ratio = 0.5
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_l33xu"]
+radius = 6.0
+
+[node name="Pickup" type="Area2D" unique_id=1984801338]
+collision_layer = 32
+collision_mask = 2
+script = ExtResource("1_60y8k")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1880850220]
+material = SubResource("ShaderMaterial_dfwuh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=655805413]
+shape = SubResource("CircleShape2D_l33xu")
+
+[node name="LifeTimer" type="Timer" parent="." unique_id=239916313]
+wait_time = 5.0
