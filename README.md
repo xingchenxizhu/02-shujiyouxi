@@ -147,3 +147,8 @@
 
 在哔哩哔哩学习up主：Voidmatrix，【从零开始的Godot游戏开发】#01 引擎安装与瓦片系统基础，https://www.bilibili.com/video/BV1fLoKBREAN，
 
+## 截图：
+
+![image-20260907092335467](img/image-20260907092335467.png)
+
+![image-20260907092455281](img/image-20260907092455281.png)
